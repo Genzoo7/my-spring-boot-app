@@ -48,6 +48,8 @@
 
     <build>
         <plugins>
+
+        
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -60,7 +62,7 @@
                 <configuration>
                     <appName>my-spring-boot-app</appName>
                     <processTypes>
-                        <web>java -jar -Dserver.port=$PORT target/${project.build.finalName}.jar</web>
+                        <web>java -jar -Dserver.port=$PORT target/my-spring-boot-app-0.0.1-SNAPSHOT.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
